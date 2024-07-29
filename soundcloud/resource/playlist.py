@@ -57,6 +57,6 @@ class AlbumPlaylistNoTracks(BaseData):
     set_type: str
     is_album: bool
     published_at: Optional[datetime.datetime]
-    release_date: Optional[str]
+    release_date: Optional[datetime.datetime]
     display_date: datetime.datetime
     user: BasicUser

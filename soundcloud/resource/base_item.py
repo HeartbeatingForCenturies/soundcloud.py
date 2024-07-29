@@ -24,7 +24,7 @@ class BaseItem(BaseData):
     public: bool
     purchase_title: Optional[str]
     purchase_url: Optional[str]
-    release_date: Optional[str]
+    release_date: Optional[datetime.datetime]
     reposts_count: Optional[int]
     secret_token: Optional[str]
     sharing: str
@@ -32,7 +32,7 @@ class BaseItem(BaseData):
     title: str
     uri: str
     user_id: int
-    display_date: str
+    display_date: datetime.datetime
 
     def get_all_tags(self) -> List[str]:
         tags = []
